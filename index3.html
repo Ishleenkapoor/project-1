@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+#register
+{
+   background-color: white; 
+   margin-left:250px;
+   margin-right:250px;
+   display:flex;
+   flex-direction: column;
+   height:stretch;
+}
+body
+{
+    background-color: black;
+}
+h1{
+    margin-top: 20px;
+    text-align: center;
+}
+#form1
+{
+    margin-left:100px;
+}
+input{
+    text-align:center;
+}
+.class1{
+    color:red;
+}
+::-webkit-input-placeholder{
+    text-align:middle;
+    color:red;
+}
+:-moz-placeholder{
+    text-align:center;
+}
+#about
+{
+
+    text-indent: 100px;
+}
+#submit
+{
+display:block;
+width:90px;
+border-radius:2px;
+font-size:larger;
+font-weight:500;
+height:auto;
+text-align:center;
+margin-left: 150px;
+margin-bottom: 20px;
+padding:10px;
+
+}
+    </style>
+</head>
+<body>
+    <div id="register">
+    <h1>Registration Form</h1>
+    <form >
+       <div id="form1">
+        <label> User id:
+            <input type="text" id="#red" placeholder="Required and must be of length 5 to 12" id="userid" class="redd" min="5" max="12"required></input>
+        <br>
+        <br>
+        <label>Password:
+            <input type="text" placeholder="Required and must be of length 7 to 12"  id="password"  required></input>
+        </label><br><br>
+        <label>Name:
+            <input type="alphabets" placeholder="Required and alphabets only"  id="password"></input>
+        </label><br><br>
+        <label>Address:
+            <input type="text" placeholder="Optional"  id="address"></input>
+        </label><br><br>
+        <label>Country:
+            <select name="country" id="country">
+                <option value="">(Please select a country)</option>
+                <option value="India">India</option>
+                <option value="canada">canada</option>
+                </select> &nbsp &nbsp &nbsp <span class="class1">Required.Must select a country</span>
+        </label><br><br>
+        <label>ZIP Code:
+            <input type="number" id="redd" placeholder="Required must be numeric only">
+
+        </label><br><br>
+        <label>Email:
+            <input type="email" placeholder="Required and must be an email">
+
+        </label><br><br>
+        <label>
+            Sex:
+            <input type="radio" placeholder="Required">Male</input>
+            <input type="radio">Female</input>  &nbsp &nbsp &nbsp <span class="class1">Required</span>
+        </label><br><br>
+        <label>
+            Language:
+            <input type="checkbox"  id="lang"checked>English</input>
+            <input type="checkbox" >Non English</input> &nbsp &nbsp &nbsp &nbsp <span class="class1">Required</span>
+        </label><br><br>
+        <label>
+            About:
+            <textarea rows="10" cols="40" id="about" placeholder="Optional" ></textarea>
+        </label><br><br>
+        <input type="submit" id="submit"></input>
+    </div>
+    </form>
+</div>
+
+    
+</body>
+</html>
